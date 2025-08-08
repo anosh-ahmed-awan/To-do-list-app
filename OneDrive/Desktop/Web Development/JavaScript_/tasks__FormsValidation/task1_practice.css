@@ -1,0 +1,245 @@
+.button1 {
+    border-radius: 12px;
+    font-size: 20px;
+    box-shadow: 1px 1px 10px rgb(167, 165, 165);
+    background-color: rgb(84, 213, 84);
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    padding: 20px 61px;
+    margin-top: 26px;
+    margin-left: 104px;
+}
+
+.btneditdel {
+    border-radius: 5px;
+    font-size: 10px;
+    background-color: rgb(84, 213, 84);
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+    padding: 10px 10px;
+    width: 45px;
+
+
+}
+tr:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.button1:hover {
+    background-color: white;
+    color: green;
+    box-shadow: 1px 1px 5px rgb(114, 212, 114);
+}
+
+/* full big div (from validation+tables) */
+
+.main_div {
+    height: 690px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 90px;
+    align-items: center;
+
+}
+
+/* table div */
+.tablediv {
+    height: 590px;
+    width: 1000px;
+    margin-left: 160px;
+    box-shadow: 2px 2px 10px #dfdfca;
+    margin-right: 50px;
+    transition: all 1s ease-in;
+    padding-left: 57px;
+    padding-right: 44px;
+
+
+}
+
+.tablediv:hover {
+    background-color: rgb(236, 236, 236);
+}
+
+/* tableheader and data */
+table,
+th,
+td {
+  border: 1px solid #ffffff;
+    border-collapse: collapse;
+    height: 51px;
+    width: 1000px;
+    margin-left: -23px;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(84 180 84);
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#header1 {
+
+    background-color: #4CAF50;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* form validation --submit */
+
+.formdiv {
+    background-color: #ffffff;
+    height: 651px;
+    width: 514px;
+    font-size: 22px;
+    padding-left: 30px;
+    box-shadow: 2px 2px 10px #cbcbaa;
+    padding-top: 0.1px;
+    margin-top: 40px;
+    transition: all 1s ease-in;
+}
+
+.formdiv:hover {
+    background-color: rgb(236, 236, 236);
+}
+
+/* inputtextbox */
+#name1 {
+    margin-left: 35px;
+    height: 36px;
+    width: 262px;
+    border: 1.5px solid rgb(19, 94, 19);
+}
+
+.searchbyname {
+    margin-top: 30px;
+    font-size: 20px;
+    margin-left: 5px;
+    text-align: left;
+    text-align: left;
+}
+
+#age1 {
+    margin-left: 50px;
+    height: 36px;
+    width: 262px;
+    border: 1.5px solid rgb(19, 94, 19);
+}
+
+#contact1 {
+    margin-left: 20px;
+    height: 36px;
+    width: 262px;
+    border: 1.5px solid rgb(19, 94, 19);
+}
+
+#email1 {
+    margin-left: 35px;
+    height: 36px;
+    width: 262px;
+    border: 1.5px solid rgb(19, 94, 19);
+}
+
+.header2 {
+    text-align: center;
+    padding-right: 39px;
+}
+
+.rd {
+    margin-top: 9px;
+    line-height: 45px;
+}
+
+.chk {
+    margin-left: 1px;
+    line-height: 56px;
+}
+
+/* select degree button */
+#dropid {
+    height: 35px;
+    width: 64px;
+    font-size: 15px;
+
+}
+
+/* 
+filtering method in degree */
+
+
+.filter-row{
+    display: flex;
+}
+
+#header1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.filter-row {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    margin-bottom: 20px;
+}
+
+#namefilter {
+  height: 30px;
+    width: 178px;
+    padding: 5px;
+    color: white;
+    background-color: #ffffff;
+    font-size: 14px;
+    font-family: sans-serif;
+    accent-color: cucolor;
+    color: white;
+    border: none;
+    color: white;
+}
+#dropidfilter {
+        height: 42px;
+    width: 120px;
+    border: 2px solid green;
+    font-size: 14px;
+}
+#genderfilter {
+    height: 42px;
+    width: 120px;
+    border: 2px solid rgb(84 180 84);
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: #53b753;
+    color: white;
+}
+
+.result-filter {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    height: 42px;
+    padding: 0 8px;
+    border-radius: 5px;
+    background-color: white;
+      background-color: #53b753;
+       
+}
+
+#parafilter {
+    font-size: 15px;
+    margin: 0;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+     font-family: sans-serif;
+
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Form Validation</title>
+    <link rel="stylesheet" href="task1_practice.css" />
+</head>
+
+<body>
+    <div class="main_div">
+        <form name="regForm">
+            <div class="formdiv">
+                <h1 class="header2">Registration Form </h1>
+                Name: <input type="text" placeholder="Enter your Full Name:" id="name1" />
+                <span id="demo1" style="color: red; font-size: 12px;"></span><br /><br />
+                Age: <input type="number" placeholder="Enter your Age:" id="age1" />
+                <span id="demo2" style="color: red; font-size: 12px;"></span><br /><br />
+                Contact: <input type="text" placeholder="Enter your Contact Number:" id="contact1" />
+                <span id="demo3" style="color: red; font-size: 12px;"></span><br /><br />
+                Email: <input type="email" placeholder="Enter your Email:" id="email1" />
+                <span id="demo4" style="color: red; font-size: 12px;"></span><br /><br />
+                <label for="dropd">Select a degree:</label>
+                <select name="dropdown" id="dropid">
+                    <option value="SE">SE</option>
+                    <option value="CS">CS</option>
+                    <option value="AI">AI</option>
+                </select>
+                <br><br>
+                Gender:
+                <input type="radio" name="gender" value="Male" id="rdmale" /> Male
+                <input type="radio" name="gender" value="Female" id="rdfemale" /> Female<br /><br />
+                <input type="checkbox" id="agree" /> Second year result received<br /><br />
+                <button class="button1" onclick="submitdata(event)" style="background-color: rgb(84 180 84);">Submit</button>
+            </div>
+        </form>
+      <div class="tablediv" id="datatable">
+    <h1 id="header1">Data In Table</h1>
+
+   <div class="filter-row">
+    <input type="text" placeholder="Enter your Name or Email" id="namefilter" oninput="filterData()" />
+
+    <select id="dropidfilter" onchange="filterData()">
+        <option value="">All Degrees</option>
+        <option value="SE">SE</option>
+        <option value="CS">CS</option>
+        <option value="AI">AI</option>
+    </select>
+
+    <select id="genderfilter" onchange="filterData()">
+        <option value="">All Genders</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+    </select>
+
+    <div class="result-filter">
+        <input type="checkbox" id="resultFilter" onchange="filterData()" />
+        <label for="resultFilter" id="parafilter">Result Received</label>
+    </div>
+</div>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Contact No</th>
+            <th>Email</th>
+            <th>Gender</th>
+            <th>Degree</th>
+            <th>Result Announced</th>
+            <th>Actions</th>
+        </tr>
+    </table>
+</div>
+    <script src="task1_practice.js"></script>
+</body>
+
+</html>
