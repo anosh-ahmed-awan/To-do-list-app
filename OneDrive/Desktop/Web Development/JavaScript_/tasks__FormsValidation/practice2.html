@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Input to Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+
+    input, button {
+      padding: 8px;
+      margin-right: 10px;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+
+    table {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Enter Your Data</h2>
+  <input type="text" id="userInput" placeholder="Enter something"><br>
+    <input type="text" id="userInput" placeholder="Enter something">
+  <button onclick="addToTable()">Submit</button>
+  
+
+  <table id="dataTable">
+    <tr>
+      <th>Entered Data</th>
+    </tr>
+  </table>
+
+  <script>
+    function addToTable() {
+      let input = document.getElementById("userInput").value;
+
+      if (input === "") {
+        alert("Please enter some data.");
+        return;
+      }
+
+      let table = document.getElementById("dataTable");
+      let newRow = table.insertRow();
+
+      let cell = newRow.insertCell(0);
+      cell.textContent = input;
+
+      document.getElementById("userInput").value = ""; // clear input
+    }
+  </script>
+
+</body>
+</html>
